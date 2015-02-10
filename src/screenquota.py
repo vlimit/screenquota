@@ -12,7 +12,7 @@ for adress, device in cec.list_devices().items():
 tv = cec.Device(0)
 while True:
 
-    if os.path.exists('/var/opt/screendisable/disable'):
+    if os.path.exists('/var/opt/screenquota/disable'):
         try:
             print tv.standby()
         
